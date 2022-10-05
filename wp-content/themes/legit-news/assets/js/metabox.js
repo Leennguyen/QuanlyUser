@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery("#legit-news-ui-tabs").tabs()});

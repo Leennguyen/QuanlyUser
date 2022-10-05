@@ -1,0 +1,465 @@
+/**
+Theme Name: Next Legit News
+Theme URI: https://themepalace.com/downloads/next-legit-news/
+Author: themepalace
+Author URI: https://themepalace.com
+Version: 1.0.1
+Requires PHP: 5.6
+Tested up to: 5.8
+Requires at least: 5.0
+Template: legit-news
+Text Domain: next-legit-news
+Description: Next Legit News theme is a child theme of Legit News. Theme is excellent for news, magazines, publishing, and review sites. Amazing, fast-loading modern magazine theme for personal or editorial use. You’ve literally never seen or used a magazine that looks or works like this before. This theme is easy to use, speed optimized and highly customizable. The responsive layout of the theme gives your website an elegant look on all devices and screen resolutions.
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments, featured-images, footer-widgets, editor-style, right-sidebar, full-width-template, two-columns, grid-layout, custom-colors, custom-header, custom-logo, featured-image-header, blog, portfolio, entertainment
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+.main-navigation ul.nav-menu,
+.main-navigation,
+.main-navigation ul ul {
+    background-color: #000;
+}
+.main-navigation ul.nav-menu > li > a,
+.main-navigation ul.sub-menu li a,
+.main-navigation svg.icon-search, 
+.main-navigation svg.icon-down,
+.social-icons li a svg {
+    color: #fff;
+    fill:#fff;
+}
+.site-logo img {
+    max-height: 65px;
+    width: auto;
+}
+.section-header {
+    margin-bottom: 35px;
+    text-align: center;
+    position: relative;
+}
+.section-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    word-wrap: break-word;
+    line-height: 1.1;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: auto;
+    background-color: transparent;
+}
+.section-title:before, 
+.section-title:after {
+    content: "";
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 500px;
+    height: 4px;
+    margin-top: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.section-title:before {
+    right: 100%;
+    margin-right: 0px;
+}
+.section-title:after {
+    left: 100%;
+    margin-left: 0px;
+}
+
+.wrapper {
+    width: 98%;
+    max-width: 1366px;
+}
+#top-bar {
+    background-color: #e13b1a;
+    color: #fff;
+    padding: 0;
+    min-height: 50px;
+    z-index: 3;
+}
+#top-bar .contact-info {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+#top-bar ul li {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+}
+#top-bar .contact-info a {
+    color: #fff;
+}
+#top-bar .contact-info a:hover,
+#top-bar .contact-info a:focus {
+    color: #fff;
+    opacity: 0.8;
+}
+#top-bar a {
+    text-decoration: none;
+}
+#top-bar .contact-info svg {
+    margin-right: 10px;
+    display: inline-block;
+}
+#top-bar svg {
+    fill: #fff;
+}
+.secondary-menu {
+    float: right;
+    padding-top: 10px;
+}
+#top-bar .secondary-menu ul {
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+#top-bar ul {
+    padding: 0;
+    margin: 0;
+}
+#top-bar ul.social-icons li {
+    margin-right: 5px;
+}
+
+#reading .widget_recent_news.col-2 > ul > li {
+    margin-bottom: 0px;
+    padding: 20px 0 5px 20px;
+}
+
+#reading .widget_recent_news.col-2 > ul > li:after {
+    border-bottom: none; 
+    background-color: transparent;
+}
+
+.site-description,
+.site-title a {
+    color: #000;
+}
+
+body {
+    background: #fff9f9;
+}
+
+.section-title, .widget-title, .widgettitle,
+.widget.widget_text .widget-title,
+.widget.widget_recent_news .widget-title,
+#primary-menu{
+    background-color: #000;
+}
+
+.section-title, .widget-title, .widgettitle,
+.widget.widget_recent_news .widget-title,
+#site-navigation a {
+    color: #fff;
+}
+/*--------------------------------------------------------------
+# Breaking News
+--------------------------------------------------------------*/
+#featured-posts {
+    margin-bottom: 40px;
+}
+
+.breaking-news-wrapper {
+    margin-bottom: 20px;
+    background-color: #f4f3f3;
+    padding: 6px 0;
+}
+
+#breaking-news .news-title {
+    line-height: unset;
+    background-color: #000;
+}
+
+.breaking-news-item-wrapper .featured-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #333;
+}
+#breaking-news .news-title {
+    margin: -10px 0px 0 0px;
+}
+.breaking-news-item-wrapper .featured-image, 
+.breaking-news-item-wrapper .entry-header {
+    display: table-cell;
+    vertical-align: middle;
+}
+ .breaking-news-item-wrapper .entry-title {
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+#hero-posts .left-posts .entry-container{
+    display: none;
+}
+
+.left-posts .featured-image {
+    padding: 100px 0;
+}
+
+.widget.widget_recent_news ul li:not(:last-child), #trending-news article:not(:first-child) {
+    border-bottom: none;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.section-title {
+    background-color: #000 !important;
+}
+
+.mid-posts article {
+    background: #f4f3f3;
+    padding: 24px;
+}
+
+span.byline:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #68696e;
+    width: 1px;
+    height: 20px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+span.byline:after {
+
+    background-color: transparent;
+
+}
+
+
+
+.entry-meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.grid-layout .featured-image {
+    padding: 150px 0;
+}
+.widget_recent_news ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.widget_recent_news > ul > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.widget_recent_news ul li:before, 
+.widget_recent_news ul li:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.widget_recent_news ul li img {
+    width: 87px;
+    height: 74px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+.widget_recent_news ul li .entry-container {
+    display: table-row;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+    text-decoration: none;
+}
+
+body.blog #masthead,
+body:not(.home) #masthead{
+    margin-bottom: 0px;
+}
+
+#must-read{
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 992px){
+    .left-posts article:not(:last-child) {
+        border-bottom: none;
+        margin-bottom: 20px;
+    }
+
+    .mid-posts {
+        padding: 0 30px 0 0;
+    }
+
+    .left-posts {
+        padding: 0 30px 0 0;
+    }
+
+}
+
+.textwidget .social-icons li a svg{
+    fill: #333;
+}
+
+.site-branding-wrapper {
+    padding: 20px 0;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+    #top-bar {
+        text-align: center;
+    }
+    #top-bar .contact-info span {
+        display: none;
+    }
+    #top-bar .hentry {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+@media screen and (min-width: 767px) {
+    .breaking-news-slider article {
+        margin-top: 0px;
+    }
+    #featured-posts .grid article:nth-child(3n),
+    #featured-posts .grid article:nth-child(4n) {
+        width: 50%;
+    }
+    .grid article:nth-child(1n) .featured-image {
+        padding: 312px 0;
+    }
+    .grid article:nth-child(2n) .featured-image, 
+    .grid article:nth-child(3n) .featured-image, 
+    .grid article:nth-child(4n) .featured-image {
+        padding: 150px 0;
+    }
+    #featured-posts article:nth-child(1) .entry-title, 
+    #featured-posts article:nth-child(2) .entry-title {
+        font-size: 38px;
+    }
+    #media-posts .col-2 {
+        margin: 0 -15px;
+    }
+    #media-posts .media-posts-wrapper.col-2 {
+        margin-bottom: 30px;
+    }
+    #media-posts .media-posts-wrapper.col-2:last-child {
+        margin-bottom: 0;
+    }
+    #media-posts .col-2 .half-width {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #top-bar .col-2 .hentry:first-child {
+        width: 70%;
+    }
+    #top-bar .col-2 .hentry:last-child {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #masthead .main-navigation ul.nav-menu li.current-menu-item > a, 
+    #masthead .main-navigation ul.nav-menu > li > a:hover, 
+    #masthead .main-navigation ul.nav-menu > li > a:focus, 
+    .main-navigation ul.nav-menu li:hover > a, 
+    .main-navigation ul.nav-menu li.focus > a,
+    #masthead .main-navigation ul.nav-menu li.current-menu-item > a, 
+    #masthead .main-navigation ul.nav-menu > li > a:hover, 
+    #masthead .main-navigation ul.nav-menu > li > a:focus, 
+    .main-navigation ul.nav-menu li:hover > a, 
+    .main-navigation ul.nav-menu > li.focus a, 
+    .main-navigation ul.sub-menu li:hover > a, 
+    .main-navigation ul.sub-menu li:focus > a {
+        background-color: #e13b1a;
+        color: #fff;
+    }
+    .main-navigation ul ul,
+    .main-navigation ul ul li:not(:last-child) {
+        border-color: #e13b1a;
+    }
+    .main-navigation ul.sub-menu li:hover > a, 
+    .main-navigation ul.sub-menu li:focus > a {
+        color: #fff !important;
+    }
+    .main-navigation ul.nav-menu > li:hover > a > svg, 
+    .main-navigation ul.nav-menu > li.current-menu-item > a > svg,
+    .main-navigation .sub-menu a:hover svg {
+        fill: #fff;
+    }
+    #featured-posts .grid article:nth-child(1n), 
+    #featured-posts .grid article:nth-child(2n),
+    .site-branding, 
+    .site-advertisement {
+        width: 50%;
+    }
+    #featured-posts .grid article:nth-child(3n),
+    #featured-posts .grid article:nth-child(4n) {
+        width: 25%;
+    }
+    .site-branding {
+        text-align: left;
+    }
+    #top-bar .contact-info li:not(:last-child) {
+        margin-right: 25px;
+    }
+    #main-post-wrapper #primary {
+        width: 70%;
+        float: left;
+        padding: 0 30px 0 0;
+    }
+    #main-post-wrapper .right-sidebar {
+        width: 30%;
+        float: left;
+    }
+    #media-posts .col-2 .half-width {
+        width: 100%;
+        float: none;
+    }
+
+    #top-navigation .main-navigation ul.nav-menu > li > a {
+        color: rgb(255 255 255);
+    }
+
+    .social-icons li a svg{
+        fill: #fff;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #media-posts .col-2 .half-width {
+        width: 50%;
+        float: left;
+    }
+
+    .left-posts .featured-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
