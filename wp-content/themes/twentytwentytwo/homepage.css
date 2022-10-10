@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo {
+  height: 200px;
+  width: 200px;
+}
+.header-socialMedia img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+.header input {
+  height: 50px;
+  width: 400px;
+  border-radius: 50px;
+  border: solid 1px;
+  padding: 0 30px;
+  outline: none;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 86, 189);
+  color: white;
+  padding: 10px;
+}
+.navigation ul li {
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  margin: 0 15%;
+}
+.content h4 {
+  margin: 5px;
+}
+.content-left img {
+  width: 650px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content-center img {
+  width: 450px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content-right img {
+  width: 200px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=homepage.css.map */
