@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+a {
+  text-decoration: none;
+}
+
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: https://meyerweb.com
+	HTML5 Doctor				:: https://html5doctor.com
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type=checkbox] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.header {
+  background-color: var(--black);
+}
+.header .vov {
+  padding-bottom: 40px;
+}
+.header .vov__name {
+  display: flex;
+  justify-content: right;
+}
+.header .vov__name li {
+  margin-right: 30px;
+}
+.header .infor {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: nowrap;
+    justify-content: space-around; */
+  align-items: center;
+}
+.header .infor div {
+  margin: 0 50px;
+}
+.header .infor div input {
+  outline: none;
+  border-radius: 22px;
+  height: 33px;
+}
+.header .infor__logo img {
+  width: 100px;
+  height: 80px;
+}
+.header .infor__logoSocial i {
+  margin-right: 20px;
+}
+.header .infor__logoSocial {
+  display: flex;
+}
+
+.fuild_header {
+  width: 100%;
+  background-color: blue;
+}
+.fuild_header .header_mainmenu {
+  background-color: var(--black);
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.fuild_header .header_mainmenu .home-icon a {
+  display: block;
+  line-height: 67px;
+  font-size: 16px;
+  color: wheat;
+}
+.fuild_header .header_mainmenu ul {
+  display: flex;
+}
+.fuild_header .header_mainmenu ul li {
+  margin: 0 10px;
+  background: var(--white);
+}
+.fuild_header .header_mainmenu ul li a {
+  display: block;
+  line-height: 67px;
+  font-size: 16px;
+  color: wheat;
+}
+
+:root {
+  --c__color_page: #e5e5e5;
+  --c__color_btn: #4ea685;
+  --c--fonsize--name--detail: 25px;
+  --c--fonsize--content--detail: 20px;
+}
+
+* {
+  /* text-decoration: none; */
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.c__containerfooter {
+  margin-top: 50px;
+  padding: 20px 30px;
+  background-color: var(--c__color_page);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px, rgba(50, 50, 93, 0.25) 0px 50px 100px 0px, rgba(183, 183, 183, 0.3) 0px 30px 60px 30px;
+}
+
+footer .c__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .c__container p,
+a {
+  color: rgb(0, 0, 0);
+}
+
+footer .c__container .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+
+footer .c__container .topic {
+  font-size: var(--c--fonsize--content--detail);
+  font-weight: 600;
+  color: #4ea685;
+  margin-bottom: 16px;
+}
+
+footer .c__container p {
+  text-align: justify;
+}
+
+footer .c__container .lower .topic {
+  margin: 24px 0 5px 0;
+}
+
+footer .c__container .lower i {
+  padding-right: 16px;
+}
+
+footer .c__container .middle {
+  padding-left: 80px;
+}
+
+footer .c__container .middle a {
+  line-height: 32px;
+}
+
+.middle.box .primary-menu {
+  background-color: #e5e5e5;
+}
+
+footer .c__container .right input[type=text] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #000000;
+  background: #e5e5e5;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: var(--c--fonsize--content--detail);
+  border: 2px solid #222222;
+}
+
+footer .c__container .right input[type=submit] {
+  height: 42px;
+  width: 100%;
+  font-size: var(--c--fonsize--content--detail);
+  color: #000000;
+  background: #4ea685;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #4ea685;
+  transition: all 0.3s ease-in-out;
+}
+
+.c__container .right input[type=submit]:hover {
+  background: none;
+  color: #4ea685;
+}
+
+footer .c__container .media-icons a {
+  font-size: var(--c--fonsize--content--detail);
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+.c__container .media-icons a:hover {
+  border-color: #4ea685;
+}
+
+footer .c__bottom {
+  width: 100%;
+  text-align: right;
+  color: #615353;
+  padding: 0 40px 5px 0;
+}
+
+footer .c__bottom a {
+  color: #4ea685;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #4ea685;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --c--fonsize--content--detail: 18px;
+  }
+  footer .c__container .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 950px) {
+  :root {
+    --c--fonsize--content--detail: 15px;
+  }
+  footer .c__container .box {
+    width: 50%;
+  }
+  .c__container .right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .c__container .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .c__container .middle {
+    padding-left: 0;
+  }
+}
+.sidebar .widget-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  background: #4ea685;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.sidebar img {
+  display: block;
+  max-width: 100%;
+  width: 300px;
+  height: 88px;
+  object-fit: container;
+  margin: 0 auto;
+}
+.sidebar .item-clearfix {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  column-gap: 10%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.gradient-line {
+  margin: 20px auto 0;
+  width: 80%;
+  display: block;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, white, #24935c, #4ea685, #29bda9, white);
+}
+
+.single-page {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 80%;
+  padding: 10px;
+}
+.single-page .entry-header {
+  margin-bottom: 30px;
+}
+.single-page .entry-header h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.single-page .entry-header .entry-meta {
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+}
+.single-page .entry-content {
+  margin-top: 30px;
+  text-align: justify;
+}
+.single-page .entry-content figure img {
+  margin-top: 30px;
+  width: 100%;
+}
+.single-page .entry-content figcaption {
+  text-align: center;
+}
+
+main {
+  margin-top: 5%;
+}
+
+.sach .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/*# sourceMappingURL=app.css.map */

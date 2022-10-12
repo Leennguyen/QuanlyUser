@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variable";
+@import "abstracts/all";
+@import "base/reset";
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+// component
+@import "components/hr";
+@import "components/card";
+
+// page
+@import "page/homepage";
+@import "page/singlepage";
+@import "page/page";
+@import "page/sach";
+
+ 

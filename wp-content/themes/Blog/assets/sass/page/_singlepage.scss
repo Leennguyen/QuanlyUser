@@ -1,0 +1,32 @@
+.single-page {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 80%;
+  padding: 10px;
+  .entry-header {
+    margin-bottom: 30px;
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    .entry-meta {
+      text-align: right;
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+  .entry-content {
+    margin-top: 30px;
+    text-align: justify;
+    figure img {
+    margin-top: 30px;
+
+      width: 100%;
+    }
+    figcaption {
+        text-align: center;
+    }
+  }
+}

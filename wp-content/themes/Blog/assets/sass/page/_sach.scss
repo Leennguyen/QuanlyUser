@@ -1,0 +1,7 @@
+.sach {
+  .products {
+    display: grid;
+    grid-template-columns: $grid_post_block;
+    grid-gap: 20px;
+  }
+}

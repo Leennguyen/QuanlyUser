@@ -1,0 +1,15 @@
+ .gradient-line {
+     margin: 20px auto 0;
+  width: 80%;
+  display: block;
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    white,
+    #24935c,
+    $main_font_color,
+    #29bda9,
+    white
+  );
+}

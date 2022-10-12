@@ -1,0 +1,125 @@
+/* 
+Theme Name: GuitarBlock
+ 
+Author: congbio
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/GuitarBlock/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Theme Description.
+Version: 1.0.0
+Text Domain: congbio
+License: GNU v3 or Later 
+*/
+html {
+    margin-top: 0;
+}
+.header {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.header-logo {
+    height: 200px;
+    width: 200px;
+}
+.header-socialMedia img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.header button {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+.header input {
+    height: 50px;
+    width: 400px;
+    border-radius: 50px;
+    border: solid 1px;
+    padding: 0 30px;
+    outline: none;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 86, 189);
+    color: white;
+    padding: 10px;
+}
+.navigation ul li {
+    list-style-type: none;
+    font-weight: bolder;
+}/*# sourceMappingURL=homepage.css.map */
+
+.fuild_header {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 83, 172);
+    color: white;
+    height: 40px;
+}
+span {
+    padding: 0 15px;
+    color: white;
+}
+.category-name li a span{
+    color: white;
+}
+.content {
+    margin: 0 10%;
+}
+.top_content {
+    display: grid;
+    grid-template-columns: 40% 30% 20%;
+    gap: 5%;
+}
+.top_content_left img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+.top_content_center img {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+.top_content_right img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+/* .abc img {
+    width: 300px ;
+    height: 150px   ;
+    object-fit: cover;
+}
+.xyz img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+} */
+.primary__wrapper{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 3%;
+}
+.lmn .entry-title a {
+    font-size: 30px;
+    color: blue;
+}
+.news {
+    display: grid;
+    gap: 20px;
+}
+.news .entry-header {
+    font-weight: bold;
+}

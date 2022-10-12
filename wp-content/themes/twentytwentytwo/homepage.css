@@ -44,20 +44,21 @@
 
 .content {
   display: grid;
-  grid-template-columns: 50% 35% 15%;
-  margin: 0 15%;
+  grid-template-columns: 50% 29% 17%;
+  gap: 2%;
+  margin: 0 17%;
 }
 .content h4 {
   margin: 5px;
 }
 .content-left img {
-  width: 650px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .content-center img {
-  width: 450px;
+  width: 350px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
